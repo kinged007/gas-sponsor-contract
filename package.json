@@ -1,0 +1,27 @@
+{
+  "name": "gas-sponsor-contract",
+  "version": "1.0.0",
+  "description": "Generic DEX-agnostic gas sponsorship contract for BSC",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network bscMainnet",
+    "setup:testnet": "hardhat run scripts/setup.ts --network bscTestnet",
+    "validate:testnet": "hardhat run scripts/testnet-validation.ts --network bscTestnet",
+    "wallet": "hardhat run scripts/generate-wallet.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
