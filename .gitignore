@@ -6,3 +6,9 @@ typechain-types/
 .env
 coverage/
 deployed.md
+.next
+*.log
+.DS_Store
+coverage.json
+.env.local
+.env.*.local

@@ -1,5 +1,9 @@
 # Gas Sponsor Contract
 
+[![CI](https://github.com/kinged007/gas-sponsor-contract/actions/workflows/ci.yml/badge.svg)](https://github.com/kinged007/gas-sponsor-contract/actions/workflows/ci.yml)
+
+> Experimental smart-contract project exploring transaction gas-fee sponsoring.
+
 A generic, DEX-agnostic gas sponsorship contract deployed on BNB Smart Chain (BSC). The contract holds a centralized BNB pool and allows whitelisted callers to execute arbitrary on-chain operations, using the pool's BNB to fund target wallet operations.
 
 ## How It Works
